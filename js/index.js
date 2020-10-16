@@ -5,16 +5,35 @@ $(function(){
         // return false;
     });
 
+    //적응형 웹(클라이언트에서 확인)
+    let userAgent = navigator.userAgent;
+            
+    //스마트폰 구분
+    let smartPhone = ['iphone', 'ipad', 'android'];
+    for(let i in smartPhone) {//i만큼 실행 each와 비슷, let생략 가능
+        if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhone[i]))) {
+            // location = 'https://sinbhs.github.io/Ames-worldwide-m/';
+            location = 'http://sinbhs.dothome.co.kr/Ames-worldwide-m/';
+        }
+    }
+
     //hamburger menu
     $('.menu-wrapper').on('click', function() {
         $('.hamburger-menu').toggleClass('animate');//햄버거 메뉴 모양
         $('.nav').toggleClass('animate');//햄버거 메뉴 투명도 조절
         $('.nav').toggleClass('open');//햄버거 메뉴 왼쪽에서 오른쪽으로 등장
+    });
 
-        // const menu = $('.hamburger-menu').hasClass('animate');//열린 상태 정의
-        // if(menu == 0) {
-        //     $('.nav').animate({left:'-100%'},0);
-        // }
+    //vegas plugin
+    $('.event_rt').vegas({
+        slides : [
+            {src: 'images/banner.jpg'},
+            {src: 'images/banner2.jpg'},
+            {src: 'images/banner3.jpg'}
+        ],
+        timer : false,//하단 진행바 숨김
+        delay:2000,//대기시간
+        transition: 'fade'//움직임의 형태
     });
 
     //marquee text

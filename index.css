@@ -63,11 +63,11 @@ aside .nav .nav_header {width: calc(100% - 85px); height: 88px; border-bottom: 2
     .container .contents .event .event_lt {width: 55%; height: 100%; text-transform: capitalize; display: flex; align-items: center;}
     .container .contents .event .event_lt h2 {font-size: 60px; letter-spacing: -0.5px;}
     .container .contents .event .event_lt p {font-size: 32px; line-height: 1.7; margin:45px 0;}
-    .container .contents .event .event_rt {width: 45%; background: url(images/banner.jpg) no-repeat center/cover;}
     /* marquee */
     .container .contents .marquee-box {width: 100%; height:350px; overflow: hidden; white-space: nowrap; display: flex; align-items: center;}
     .container .contents .marquee {font-size: 0;}
-    .container .contents .marquee .clipped-text {display: inline-block; font-size: 80px; font-weight: 700; color:#fff; -webkit-text-stroke: 1px #000; margin-right: 40px;}
+    .container .contents .marquee .clipped-text {display: inline-block; font-size: 80px; font-weight: 700; color:#fff; -webkit-text-stroke: 1px #000; margin-right: 40px; transition:300ms;}
+    .container .contents .marquee .clipped-text:hover {color:#000;}
     /* section 2 - clothes */
     .container .contents .clothes {width: 100%; border-bottom: 2px solid #000;}
     .container .contents .clothes ul {width: 100%; padding:0 40px; display: flex; justify-content: space-between;}
@@ -94,16 +94,19 @@ aside .nav .nav_header {width: calc(100% - 85px); height: 88px; border-bottom: 2
 
     /* section 4 - products */
     .container .contents .pd_list {border-bottom: 2px solid #000; padding:40px;}
+    .container .contents .pd_list h3 {text-transform: capitalize;}
     .container .contents .pd_list .pd-container {width: 100%; overflow: hidden;}
     .container .contents .pd_list a {margin-top:80px;}
 
     /* section 5 - look */
     .container .contents .look {padding:40px; border-bottom:2px solid #000;}
+    .container .contents .look h3 {text-transform: capitalize;}
     .container .contents .look ul {display: flex; justify-content: space-around;}
     .container .contents .look ul li {width:379px; height:517px;}
-    .container .contents .look ul li:first-child {background:url(images/model1.png) no-repeat center/cover;}
-    .container .contents .look ul li:nth-child(2) {background:url(images/model2.png) no-repeat center/cover;}
-    .container .contents .look ul li:last-child {background:url(images/model3.png) no-repeat center/cover;}
+    .container .contents .look ul li {position: relative;}
+    .container .contents .look ul li img:nth-of-type(2) {position: absolute; top:0; left:0; opacity: 0;}
+    .container .contents .look ul li:hover img:nth-of-type(1) {opacity: 0;}
+    .container .contents .look ul li:hover img:nth-of-type(2) {position: absolute; top:0; left:0; opacity: 1;}
     /* section 6 - sns */
     .container .contents .sns {width: 100%; height:200px; line-height: 200px; background: url(images/snsBg.jpg) no-repeat center/cover; text-align: center; color:#fff; font-size:3.125vw; text-shadow: 0 0 10px #000;}
 /* footer */
