@@ -2,12 +2,12 @@
 
 /* basic */
 * {box-sizing: border-box;}
-body {font-family: 'Noto Sans KR',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; cursor:url(images/cursor-normal@1x.png) 0 0, auto; cursor: -webkit-image-set(url(images/cursor-normal@1x.png) 1x, url(images/cursor-normal@2x.png) 2x) 0 0, auto;}
 h1,h2,h3,h4 {margin:0; font-family: 'Poppins',sans-serif;}
 body {font-size: 20px;}
 ul {list-style: none; padding:0; margin: 0;}
 img {vertical-align: top;}
 a {text-decoration: none; color: inherit;}
+
 /* hover, active basic */
 a:hover, a:active { cursor:url(images/cursor-pointer@1x.png) 0 0, auto; cursor: -webkit-image-set(url(images/cursor-pointer@1x.png) 1x, url(images/cursor-pointer@2x.png) 2x), 8 0, auto;}
 a.button {font-size:32px; padding:18px 35px; border:2px solid #000; display: inline-block; transition:300ms;}
@@ -16,10 +16,15 @@ svg {width: 45px;}
 a.button svg path {transition: 300ms;}
 a.button:hover svg path {fill: #fff;}
 
+/* font, cursor */
+body {font-family: 'Noto Sans KR',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif; cursor:url(images/cursor-normal@1x.png) 0 0, auto; cursor: -webkit-image-set(url(images/cursor-normal@1x.png) 1x, url(images/cursor-normal@2x.png) 2x) 0 0, auto;}
+
 /* container */
 .container {width:calc(100% - 85px); height: 100%; margin-left:85px; padding-top:88px;}
+
 /* aside = overlay menu */
 aside {width: 85px; height:100%; padding:0 10px 0; position: fixed; left:0; top:0; z-index: 600; border-right: 2px solid #000;}
+
 /* hamburger menu button */
 .menu-wrapper {width: 54px; height: 29px; padding:35px 5px; position: absolute; z-index: 9999; cursor: pointer;}
 .hamburger-menu, .hamburger-menu:after, .hamburger-menu:before {width: 54px;height: 3px; background: #000;}
@@ -58,16 +63,19 @@ aside .nav .nav_header {width: calc(100% - 85px); height: 88px; border-bottom: 2
     /* box size basic */
     .lt {width: 55%; border-right:2px solid #000; padding:40px;}
     .rt {width: 45%;}
+
     /* section 1 - event */
     .container .contents .event {width: 100%; height: 100vh;border-bottom:2px solid #000; display: flex;}
     .container .contents .event .event_lt {width: 55%; height: 100%; text-transform: capitalize; display: flex; align-items: center;}
     .container .contents .event .event_lt h2 {font-size: 60px; letter-spacing: -0.5px;}
     .container .contents .event .event_lt p {font-size: 32px; line-height: 1.7; margin:45px 0;}
+
     /* marquee */
     .container .contents .marquee-box {width: 100%; height:350px; overflow: hidden; white-space: nowrap; display: flex; align-items: center;}
     .container .contents .marquee {font-size: 0;}
     .container .contents .marquee .clipped-text {display: inline-block; font-size: 80px; font-weight: 700; color:#fff; -webkit-text-stroke: 1px #000; margin-right: 40px; transition:300ms;}
     .container .contents .marquee .clipped-text:hover {color:#000;}
+
     /* section 2 - clothes */
     .container .contents .clothes {width: 100%; border-bottom: 2px solid #000;}
     .container .contents .clothes ul {width: 100%; padding:0 40px; display: flex; justify-content: space-between;}
@@ -84,6 +92,7 @@ aside .nav .nav_header {width: calc(100% - 85px); height: 88px; border-bottom: 2
     .container .contents .clothes .text p {margin-bottom:80px;}
     .container .contents .clothes .text p a {text-decoration: underline;}
     .container .contents .clothes .text p a:hover {text-decoration: none;}
+
     /* section 3 - about */
     .container .contents .about {display:flex; height:935px; border-bottom: 2px solid #000;}
     .container .contents .about .lt h3, .container .contents .pd_list h3, .container .contents .look h3 {font-size:35px; margin: 35px 0 60px;}
@@ -107,8 +116,10 @@ aside .nav .nav_header {width: calc(100% - 85px); height: 88px; border-bottom: 2
     .container .contents .look ul li img:nth-of-type(2) {position: absolute; top:0; left:0; opacity: 0;}
     .container .contents .look ul li:hover img:nth-of-type(1) {opacity: 0;}
     .container .contents .look ul li:hover img:nth-of-type(2) {position: absolute; top:0; left:0; opacity: 1;}
+
     /* section 6 - sns */
     .container .contents .sns {width: 100%; height:200px; line-height: 200px; background: url(images/snsBg.jpg) no-repeat center/cover; text-align: center; color:#fff; font-size:3.125vw; text-shadow: 0 0 10px #000;}
+
 /* footer */
 footer {width: 100%; height: 280px; display: flex; padding:0 40px; justify-content: space-between; align-items: center;}
 footer h2 {width:240px; height:64px; text-indent: -9999px; background:url(images/logo.svg) no-repeat center/cover;}
@@ -128,5 +139,6 @@ footer .bot_nav ul li a:hover:after {transform: scaleX(1);}
 footer .com_info {font-size: 14px; text-transform: uppercase; padding-right: 30px;}
 footer .com_info ul {line-height: 1.8;}
 footer .com_info ul li span {text-transform: none;}
+
 /* scrollTop */
 .scrollTop {border:2px solid #000; width:44px; height:44px; background: url(images/scrollTop.svg) no-repeat center, #fff; position: fixed; right:20px; bottom:56px; z-index: 500; cursor: pointer;}
