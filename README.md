@@ -1,4 +1,4 @@
-# Ames-worldwide-pc version
+# Portfolio Work - Ames worldwide PC version
 [리뉴얼된 AMES WORLDWIDE 적응형 페이지(PC Version) 바로 가기](https://sinbhs.github.io/Ames-worldwide/)
 
 **Portfolio Work** - **Renewal Ames Worldwide shopping mall** website (design&amp;develop) **PC Version**
