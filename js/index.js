@@ -12,8 +12,7 @@ $(function(){
     let smartPhone = ['iphone', 'ipad', 'android'];
     for(let i in smartPhone) {//i만큼 실행 each와 비슷, let생략 가능
         if(navigator.userAgent.toLowerCase().match(new RegExp(smartPhone[i]))) {
-            // location = 'https://sinbhs.github.io/Ames-worldwide-m/';
-            location = 'http://sinbhs.dothome.co.kr/Ames-worldwide-m/';
+            location = 'https://sinbhs.github.io/Ames-worldwide-m/';
         }
     }
 
