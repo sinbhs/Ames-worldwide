@@ -347,3 +347,8 @@ template {
 [hidden] {
   display: none;
 }
+
+/* add sjw 깃 .container 스타일 리셋 */
+.container {
+  max-width: none;
+}
